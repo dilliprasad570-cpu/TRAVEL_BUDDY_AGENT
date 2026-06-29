@@ -233,15 +233,7 @@ User Query
 
 ---
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/hotel-search`)
-3. Commit your changes (`git commit -m 'Add hotel search tool'`)
-4. Push to the branch (`git push origin feature/hotel-search`)
-5. Open a Pull Request
-
----
 
 ## 📜 License
 
