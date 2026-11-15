@@ -1,0 +1,7 @@
+langchain
+langchain-nvidia-ai-endpoints
+langchain-tavily
+langgraph
+gradio
+python-dotenv
+requests
