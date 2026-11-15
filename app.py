@@ -161,7 +161,7 @@ def get_agent():
             raise ValueError("OPEN_AI_API environment variable is missing.")
 
         client = ChatNVIDIA(
-            model="openai/gpt-oss-120b",
+            model="nvidia/nemotron-3.5-lightning-30b-a3b",
             api_key=api_key,
             temperature=1,
             top_p=1,
