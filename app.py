@@ -41,7 +41,7 @@ client = ChatNVIDIA(
   api_key=os.getenv("OPEN_AI_API"),      # Fetch the API key from the .env file (the "password" to use the model)
   temperature=1,                          # Controls creativity: 0 = very predictable, 1 = more creative responses
   top_p=1,                                # Another creativity control: 1 = consider all possible word choices
-  max_tokens=4096,                        # Maximum length of the AI's response (4096 tokens ≈ ~3000 words)
+max_completion_tokens=4096                    # Maximum length of the AI's response (4096 tokens ≈ ~3000 words)
 )
 
 
@@ -193,9 +193,13 @@ demo = gr.Interface(
 # This starts a local web server and opens the interface in your browser.
 # debug=True means it will show detailed error messages if something goes wrong (helpful during development).
 port = int(os.environ.get("PORT", 7860))
+print("Starting Travel Buddy Agent...")
+print("PORT:", os.environ.get("PORT"))
+print("Launching Gradio...")
 
 demo.launch(
     server_name="0.0.0.0",
     server_port=port,
     debug=False
 )
+
