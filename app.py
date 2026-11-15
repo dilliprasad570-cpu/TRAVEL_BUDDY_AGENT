@@ -192,7 +192,10 @@ demo = gr.Interface(
 # --- LAUNCH THE APP ---
 # This starts a local web server and opens the interface in your browser.
 # debug=True means it will show detailed error messages if something goes wrong (helpful during development).
-import os
-
 port = int(os.environ.get("PORT", 7860))
-demo.launch(server_name="0.0.0.0", server_port=port, debug=True)
+
+demo.launch(
+    server_name="0.0.0.0",
+    server_port=port,
+    debug=True
+)
